@@ -1,9 +1,10 @@
 
-aiogram
-aiosqlite
+aiogram==3.4.1
+pydantic==2.5.2
+pydantic-settings==2.2.1
+aiosqlite==0.19.0
+httpx==0.26.0
+python-dotenv==1.0.0
 apscheduler
-httpx
-pydantic
-pydantic-settings
 pytz
 sqlalchemy
