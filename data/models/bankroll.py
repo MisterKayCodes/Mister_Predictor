@@ -1,10 +1,14 @@
-a/models/pattern_stat.py
-Python
+from sqlalchemy import Column, Integer, Float, DateTime, ForeignKey
+from datetime import datetime
+from data.database import Base
 
-# data/models/bankroll.py
+
 class BankrollHistory(Base):
     __tablename__ = "bankroll_history"
-    id = Column(Integer, primary_key=True)
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
     timestamp = Column(DateTime, default=datetime.utcnow)
     balance = Column(Float, nullable=False)
-    pnl = Column(Float) # Profit/Loss from last update
+    stake = Column(Float, nullable=True)
+    pnl = Column(Float, nullable=True)
+    match_id = Column(Integer, ForeignKey("matches.id"), nullable=True)

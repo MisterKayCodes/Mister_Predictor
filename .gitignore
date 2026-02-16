@@ -1,16 +1,19 @@
-# Python bytecode
 __pycache__/
 *.py[cod]
-
-# Environments
-.env
-venv/
-env/
-
-# Database
+*$py.class
+*.so
 *.db
 *.sqlite3
-
-# OS files
+.env
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+.pythonlibs/
+.cache/
+.upm/
+*.log
 .DS_Store
-Thumbs.db

@@ -1,0 +1,9 @@
+
+aiogram
+aiosqlite
+apscheduler
+httpx
+pydantic
+pydantic-settings
+pytz
+sqlalchemy
